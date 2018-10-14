@@ -5,7 +5,7 @@ class Post < ActiveRecord::Base
   belongs_to :author
 
   def self.by_author(author_id)
-    where (author: author_id)
+    where(author: author_id)
   end 
 
   private
